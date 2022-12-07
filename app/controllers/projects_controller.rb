@@ -2,7 +2,7 @@ class ProjectsController < ApplicationController
     wrap_parameters format: []
 
     def index
-        render json: Project.all, flag: "restrict", status: :ok
+        render json: Project.all, status: :ok
     end
 
     def show
